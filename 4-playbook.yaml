@@ -1,0 +1,7 @@
+- name: Start the service
+  hosts: web
+  tasks:
+    - name: nginx service Start
+      ansible.builtin.service:
+        name: nginx
+        state: started
