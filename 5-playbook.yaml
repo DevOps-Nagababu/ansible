@@ -1,11 +1,11 @@
-- name: Variable in Ansbile
+- name: Variable in Ansible
   hosts: local
   connection: local
   vars:
-    COURES: "DevOps, AWS"
-    DURATION: "140 Hous"
+    COURSE: "DevOps, AWS"
+    DURATION: "140 Hours"
     INSTRUCTOR: "Naga"
   tasks:
     - name: print variables
       ansible.builtin.debug:
-        msg: "Course is : {{ COURES }, duration is: {{ DURATION }}, and Trainser is {{ INSTRUCTOR }}"
+        msg: "Course is: {{ COURSE }}, duration is: {{ DURATION }}, and Trainer is {{ INSTRUCTOR }}"
