@@ -1,5 +1,6 @@
 - name: Start the service
   hosts: web
+  become: yes
   tasks:
     - name: nginx service Start
       ansible.builtin.service:
