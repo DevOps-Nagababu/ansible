@@ -1,0 +1,5 @@
+- name: first Payl book
+  hosts: web
+  tasks:
+    - name: ping the web sever
+      ansible.buildin.ping:
