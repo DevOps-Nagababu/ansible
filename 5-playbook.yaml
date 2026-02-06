@@ -1,0 +1,12 @@
+- name: Variable in Ansbile
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+    COURES: "DevOps, AWS"
+    DURATION: "140 Hous"
+    INSTRUCTOR: "Naga"
+  tasks:
+    - name:
+      ansible.builtin.debug:
+      msg: "Course is : {{COURES}}, duration is: {{DURATION:}}, and Trainser is {{INSTRUCTOR:}}"
