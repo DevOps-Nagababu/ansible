@@ -1,7 +1,6 @@
 - name: Variable in Ansbile
   hosts: local
   connection: local
-  become: yes
   vars:
     COURES: "DevOps, AWS"
     DURATION: "140 Hous"
