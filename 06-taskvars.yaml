@@ -1,0 +1,12 @@
+- name: Task variables
+  hosts: local
+  connetion: local
+  vars:
+    COURSE: "DevOps and AWS"
+    TRAINER: "Nagababu"
+  tasks:
+    - name: Task variables in details
+      ansible.builtin.debug:
+      vars:
+        TRAINER: " Teja"
+      msg: " COURSE is {{ COURSE }}, TRAINER is {{ TRAINER }}"
