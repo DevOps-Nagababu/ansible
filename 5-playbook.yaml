@@ -1,6 +1,5 @@
 - name: Variable in Ansible
-  hosts: local
-  connection: local
+  hosts: web
   vars:
     COURSE: "DevOps, AWS"
     DURATION: "140 Hours"
