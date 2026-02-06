@@ -6,7 +6,7 @@
     TRAINER: "Nagababu"
   tasks:
     - name: Task variables in details
-      ansible.builtin.debug:
       vars:
         TRAINER: " Teja"
-      msg: " COURSE is {{ COURSE }}, TRAINER is {{ TRAINER }}"
+      ansible.builtin.debug:
+        msg: " COURSE is {{ COURSE }}, TRAINER is {{ TRAINER }}"
