@@ -1,13 +1,27 @@
-- name: Prompt user to enter the Username and Password
-  hosts: web
+# - name: Prompt user to enter the Username and Password
+#   hosts: web
+#   vars_prompt:
+#     - name: Username
+#       prompt: Please enter the Username
+#       private: false
+#     - name: Password
+#       prompt: Please enter the Password
+#       private: true
+#   tasks:
+#     - name: Varibale Prompt
+#       ansible.builtin.debug:
+#         msg: "Username is {{ Username }}, and Password is {{ Password }}"
+
+- name: Prompt example
+  host: web
   vars_prompt:
-    - name: Username
-      prompt: Please enter the Username
+    - name: user
+      prompt: Please enter the user name
       private: false
-    - name: Password
-      prompt: Please enter the Password
+    - name: Pass
+      prompt: plesae enter the Password
       private: true
   tasks:
-    - name: Varibale Prompt
+    - name: prompt
       ansible.builtin.debug:
-        msg: "Username is {{ Username }}, and Password is {{ Password }}"
+      msg: "User name is : {{ user }} and Password is {{ pass }}"
