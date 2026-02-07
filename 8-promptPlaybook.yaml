@@ -13,7 +13,7 @@
 #         msg: "Username is {{ Username }}, and Password is {{ Password }}"
 
 - name: Prompt example
-  host: web
+  hosts: web
   vars_prompt:
     - name: user
       prompt: Please enter the user name
