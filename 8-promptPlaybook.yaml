@@ -1,5 +1,6 @@
 - name: Prompt user to enter the Username and Password
-  hosts: web
+  hosts: local
+  connection: local
   vars_prompt:
     - name: Username
       prompt: Please enter the Username
