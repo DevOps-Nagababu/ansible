@@ -18,10 +18,10 @@
     - name: user
       prompt: Please enter the user name
       private: false
-    - name: Pass
+    - name: pass
       prompt: plesae enter the Password
       private: true
   tasks:
     - name: prompt
       ansible.builtin.debug:
-        msg: "User name is : {{ user }} and Password is {{ Pass }}"
+        msg: "User name is : {{ user }} and Password is {{ pass }}"
