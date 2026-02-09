@@ -1,0 +1,6 @@
+- name: Vars with args
+  hosts: local
+  tasks:
+    - name: passing the args
+      ansible.builtin.debug:
+        msg: "My Name is {{ Name }}"
