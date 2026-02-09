@@ -1,0 +1,10 @@
+- name: Conditions in ansible
+  hosts: local
+  connection: local
+  vars:
+    TOTAL_SESSIONS: 7
+  tasks:
+    - name: When is the value
+      ansible.builtin.debug:
+        msg: "Checking the conditons using when"
+      when: TOTAL_SESSIONS > 5
