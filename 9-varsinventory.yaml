@@ -4,4 +4,4 @@
   tasks:
     - name: Variables in Inventory
       ansible.builtin.debug:
-        msg: "Course name is DevOps-Naga"
+        msg: "Course name is {{ COURSE }}"
