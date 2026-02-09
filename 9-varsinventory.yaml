@@ -1,6 +1,6 @@
 - name: Varibale from Inventory file
-  hosts: local
-  connection: local
+  hosts: web
+
   tasks:
     - name: Variables in Inventory
       ansible.builtin.debug:
