@@ -1,0 +1,9 @@
+- name: Conditions by using the facts
+  hosts: local
+  connection: local
+  vars:
+    - name: checking the facts
+  tasks:
+    - name: facts
+      ansible.builtin.debug:
+        msg: { { ansible_facts } }
