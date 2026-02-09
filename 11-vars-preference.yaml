@@ -5,10 +5,10 @@
     - NAME: "Vars from play"
   # vars_files:
   #   - vars.yaml
-  vars_prompt:
-    - name: NAME
-      prompt: Please enter the Name
-      private: false
+  # vars_prompt:
+  #   - name: NAME
+  #     prompt: Please enter the Name
+  #     private: false
 
   tasks:
     - name: print name
@@ -21,4 +21,7 @@
 
 # 1 Args
 # 2 Task
+# 3 Separate file
+# 4 Prompt
+# 5
 
