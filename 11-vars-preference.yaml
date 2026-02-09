@@ -12,4 +12,10 @@
       vars:
         - NAME: Vars from Task
       ansible.builtin.debug:
-        msg: "Variable from {{ NAME }}"
+        msg: "{{ NAME }}"
+# Variable perferennce :
+# ========================
+
+# 1 Args
+# 2 Task
+
