@@ -7,4 +7,4 @@
     - name: When is the value
       ansible.builtin.debug:
         msg: "Checking the conditons using when"
-      when: TOTAL_SESSIONS > 5
+      when: TOTAL_SESSIONS > 10
