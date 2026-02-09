@@ -7,10 +7,13 @@
     - vars.yaml
   vars_prompt:
     - name: NAME
+      prompt: Please enter the Name
+      private: false
+
   tasks:
     - name: print name
-      vars:
-        - NAME: Vars from Task
+      # vars:
+      #   - NAME: Vars from Task
       ansible.builtin.debug:
         msg: "{{ NAME }}"
 # Variable perferennce :
