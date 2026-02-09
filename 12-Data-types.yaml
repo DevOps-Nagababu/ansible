@@ -1,0 +1,23 @@
+- name: Data types
+  hosts: local
+  connection: local
+  vars:
+    COURSE: "DevOps with AWS"
+    DURATION: 4
+    IS_LIVE: true
+    TOPICS:
+      - Linux
+      - Shell Scripting
+      - ansible
+    DETAILS:
+      MONTHS: 4
+      TRAINER: Nagababu
+  tasks:
+    - name: Data types in ansible
+      ansible.builtin.debug:
+        msg: |
+          course: {{ COURSE }}
+          duration: {{ DURATION }}
+          is live: {{ IS_LIVE }}
+          topics: {{ TOPICS }}
+          details: {{ DETAILS }}
