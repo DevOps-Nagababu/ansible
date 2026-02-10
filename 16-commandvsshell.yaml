@@ -3,7 +3,8 @@
   connection: local
   tasks:
     - name: commands vs shell exp
-      ansible.builtin.command: cat /etc/passwd | grep root
+      ansible.builtin.command: cat /etc/passwd | grep root # Command is not allowed for > , |
+      ansible.builtin.shell: cat /etc/passwd | grep root #Shell is allowed  for > , |
       register: ouser_output
     - name: print out put
       ansible.builtin.debug:
