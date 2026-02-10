@@ -1,0 +1,12 @@
+- name: Loops in ansible
+  hosts: local
+  connection: local
+  tasks:
+    - name: loops in ansbile playbook
+      ansible.builtin.debug:
+        msg: "Hello {{ item }}"
+      loop:
+        - Nagababu
+        - Teja Sri
+        - Nakshatra
+        - Mokshita
