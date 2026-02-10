@@ -4,8 +4,8 @@
   tasks:
     - name: Check user add or not
       ansible.builtin.command: id roboshop
-      ignore_erros: true
       register: result
+      ignore_erros: true
 
     - name: print result
       ansible.builtin.debug:
