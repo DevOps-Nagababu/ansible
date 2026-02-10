@@ -1,0 +1,9 @@
+- name: split fucntion example
+  hosts: local
+  connection: local
+  vars:
+    topics: java, python, devops,data enginner
+  tasks:
+    - name: split example
+      ansible.builtin.debug:
+        msg: "{{ topics | split(',')}}"
