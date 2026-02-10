@@ -5,12 +5,12 @@
   tasks:
     - name: Check user add or not
       ansible.builtin.command: id roboshop
-      register: result
+      register: result_out
       ignore_errors: true
 
     - name: print result
       ansible.builtin.debug:
-        msg: "{{ result }}"
+        msg: "{{ result_out }}"
     - name: no user add the roboshop user
       ansible.builtin.command: useradd roboshop
-      when: result.rc !=0
+      when: result_out.rc !=0
