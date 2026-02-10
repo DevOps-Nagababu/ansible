@@ -1,0 +1,12 @@
+- name: convert map to list
+  hosts: local
+  connection: local
+  vars:
+    tagslist:
+      name: ansbile
+      project: robosop
+      component: catalogue
+    tasks:
+      - name: converting map to list
+        ansible.builtin.debug:
+          msg: "{{ tagslist | dist2list}}"
