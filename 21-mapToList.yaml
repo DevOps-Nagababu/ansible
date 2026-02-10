@@ -9,4 +9,4 @@
   tasks:
     - name: converting map to list
       ansible.builtin.debug:
-        msg: "{{ tagslist | dist2list}}"
+        msg: "{{ tagslist | dist2list }}"
