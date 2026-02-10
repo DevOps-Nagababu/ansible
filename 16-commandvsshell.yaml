@@ -9,3 +9,10 @@
     - name: print out put
       ansible.builtin.debug:
         msg: "{{ ouser_output }}"
+
+    - name: shell redirect to output using >
+      ansible.builtin.shell: ls -ltr > test.txt
+      register: output_shell
+
+    - name: output from shell redirect
+      ansible.builtin.debug: msg:"{{ output_shell }}"
