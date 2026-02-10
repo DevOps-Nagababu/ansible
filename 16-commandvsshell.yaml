@@ -5,3 +5,6 @@
     - name: commands vs shell exp
       ansible.builtin.command: cat /etc/passwd | grep root
       register: ouser_output
+    - name: print out put
+      ansible.builtin.debug:
+        msg: { { ouser_output } }
