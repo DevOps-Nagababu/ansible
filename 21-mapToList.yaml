@@ -6,7 +6,7 @@
       name: ansbile
       project: robosop
       component: catalogue
-    tasks:
-      - name: converting map to list
-        ansible.builtin.debug:
-          msg: "{{ tagslist | dist2list}}"
+  tasks:
+    - name: converting map to list
+      ansible.builtin.debug:
+        msg: "{{ tagslist | dist2list}}"
